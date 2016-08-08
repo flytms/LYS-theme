@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <title>{Title}</title>
 <!--
@@ -19,7 +19,7 @@
  |
  -->
 <link rel="shortcut icon" href="{Favicon}">
-<meta name="description" content=")))" />
+<meta name="description" content="" />
 <meta name="color:Background" content="#fff"/>
 <meta name="color:Text" content="#ddd"/>
 <meta name="color:Link Hover" content="#fff"/>
@@ -1401,8 +1401,8 @@ $(window).on('resize', function(){
     $windowheight = $(window).height();
     $windowwidth = $(window).width();
     //CHANGED
-    //if(($windowheight < 661 || $windowwidth < 1191) && $leftside == true){
-    if(($windowheight < 61 || $windowwidth < 91) && $leftside == true){
+    if(($windowheight < 661 || $windowwidth < 1191) && $leftside == true){
+    //if(($windowheight < 61 || $windowwidth < 91) && $leftside == true){
         $("#postoptions").velocity({ opacity: 0 }, { queue: false, duration: 700, easing: 'ease' });
         $("#logobottom").velocity({ opacity: 0 }, { queue: false, duration: 700, easing: 'ease' });
         $('#postoptions').delay(700).queue(function (next) { 
@@ -1419,8 +1419,8 @@ $(window).on('resize', function(){
         $leftside = false;
     }
     //CHANGED
-    //if(($windowheight > 661 && $windowwidth > 1191) && $leftside == false){
-    if(($windowheight > 61 && $windowwidth > 91) && $leftside == false){
+    if(($windowheight > 661 && $windowwidth > 1191) && $leftside == false){
+    //if(($windowheight > 61 && $windowwidth > 91) && $leftside == false){
         $("#postoptions").velocity({ opacity: 1 }, { queue: false, duration: 700, easing: 'ease' });
         $("#logobottom").velocity({ opacity: 1 }, { queue: false, duration: 700, easing: 'ease' });
         $("#postoptions").css({'pointer-events':'all','display' : 'inline-block'}); 
